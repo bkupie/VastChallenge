@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+
+    <title>Micro Challenge 3</title>
+    <!-- Our Canvas -->
+    <canvas width="1651" height="1651"></canvas>
+
+    <svg width="651" height="651"></svg>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- CSS Source -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="lib/css/slimmenu.min.css">
+    <!-- JS Libraries -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="src/js/jquery.slimmenu.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- JS Source -->
+    <script src="./src/js/main.js"></script>
+</head>
+<body>
+<div id="graph"></div>
+<ul class="slimmenu">
+            <li>
+                <a href="#">RGB</a>
+                <ul>
+                    <li>
+                      <a href="#">2014</a>
+                      <ul>
+                          <li><input id = "clickMe" onclick = "changeImageRGB(01)" type = "image" <img src="data/RGB/01.png" alt="Image 1" style="width:140px;height:140px;">03/17/2014</a></li>
+                          <li><input id = "clickMe" onclick = "changeImageRGB(02)" type = "image" <img src="data/RGB/02.png" alt="Image 1" style="width:140px;height:140px;">08/24/2014</a></li>
+                          <li><input id = "clickMe" onclick = "changeImageRGB(03)" type = "image" <img src="data/RGB/03.png" alt="Image 1" style="width:140px;height:140px;">11/28/2014</a></li>
+                          <li><input id = "clickMe" onclick = "changeImageRGB(04)" type = "image" <img src="data/RGB/04.png" alt="Image 1" style="width:140px;height:140px;">12/30/2014</a></li>
+                          </li>
+                      </ul>
+
+                  <li><a href="#">2015</a>
+                    <ul>
+                          <li><input id = "clickMe" onclick = "changeImageRGB(05)" type = "image" <img src="data/RGB/05.png" alt="Image 1" style="width:140px;height:140px;">02/15/2015</a></li>
+                          <li><input id = "clickMe" onclick = "changeImageRGB(06)" type = "image" <img src="data/RGB/06.png" alt="Image 1" style="width:140px;height:140px;">06/24/2015</a></li>
+                          <li><input id = "clickMe" onclick = "changeImageRGB(07)" type = "image"<img src="data/RGB/07.png" alt="Image 1" style="width:140px;height:140px;">09/12/2015</a></li>
+                          <li><input id = "clickMe" onclick = "changeImageRGB(08)" type = "image" <img src="data/RGB/08.png" alt="Image 1" style="width:140px;height:140px;">11/15/2015</a></li>
+                          </li>
+                      </ul>
+                  <li><a href="#">2016</a><ul>
+                        <li><input id = "clickMe" onclick = "changeImageRGB(09)" type = "image"<img src="data/RGB/09.png" alt="Image 1" style="width:140px;height:140px;">03/06/2016</a></li>
+                        <li><input id = "clickMe" onclick = "changeImageRGB(10)" type = "image"<img src="data/RGB/10.png" alt="Image 1" style="width:140px;height:140px;">06/26/2016</a></li>
+                        <li><input id = "clickMe" onclick = "changeImageRGB(11)" type = "image" <img src="data/RGB/11.png" alt="Image 1" style="width:140px;height:140px;">09/06/2016</a></li>
+                        <li><input id = "clickMe" onclick = "changeImageRGB(12)" type = "image"<img src="data/RGB/12.png" alt="Image 1" style="width:140px;height:140px;">12/19/2016</a></li>
+                    </ul>
+
+                  </li>
+                </ul>
+            </li>
+    <li>
+        <a href="#">Original</a>
+        <ul>
+            <li>
+                            <a href="#">2014</a>
+                            <ul>
+                                <li><input id = "clickMe" onclick = "changeImageOriginal(01)" type = "image" <img src="data/original/image01.jpg" alt="Image 1" style="width:140px;height:140px;">03/17/2014</a>
+                                <li><input id = "clickMe" onclick = "changeImageOriginal(02)" type = "image" <img src="data/original/image02.jpg" alt="Image 1" style="width:140px;height:140px;">08/24/2014</a>
+                                <li><input id = "clickMe" onclick = "changeImageOriginal(03)" type = "image" <img src="data/original/image03.jpg" alt="Image 1" style="width:140px;height:140px;">11/28/2014</a>
+                                <li><input id = "clickMe" onclick = "changeImageOriginal(04)" type = "image" <img src="data/original/image04.jpg" alt="Image 1" style="width:140px;height:140px;">12/30/2014</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">2015</a>
+                          <ul>
+                                <li><input id = "clickMe" onclick = "changeImageOriginal(05)" type = "image" <img src="data/original/image05.jpg" alt="Image 1" style="width:140px;height:140px;">02/15/2015</a>
+                                <li><input id = "clickMe" onclick = "changeImageOriginal(06)" type = "image" <img src="data/original/image06.jpg" alt="Image 1" style="width:140px;height:140px;">06/24/2015</a>
+                                <li><input id = "clickMe" onclick = "changeImageOriginal(07)" type = "image"<img src="data/original/image07.jpg" alt="Image 1" style="width:140px;height:140px;">09/12/2015</a>
+                                <li><input id = "clickMe" onclick = "changeImageOriginal(08)" type = "image" <img src="data/original/image08.jpg" alt="Image 1" style="width:140px;height:140px;">11/15/2015</a>
+                                </li>
+                            </ul>
+                        <li><a href="#">2016</a><ul>
+                              <li><input id = "clickMe" onclick = "changeImageOriginal(09)" type = "image"<img src="data/original/image09.jpg" alt="Image 1" style="width:140px;height:140px;">03/06/2016</a>
+                              <li><input id = "clickMe" onclick = "changeImageOriginal(10)" type = "image"<img src="data/original/image10.jpg" alt="Image 1" style="width:140px;height:140px;">06/26/2016</a>
+                              <li><input id = "clickMe" onclick = "changeImageOriginal(11)" type = "image" <img src="data/original/image11.jpg" alt="Image 1" style="width:140px;height:140px;">09/06/2016</a>
+                              <li><input id = "clickMe" onclick = "changeImageOriginal(12)" type = "image"<img src="data/original/image12.jpg" alt="Image 1" style="width:140px;height:140px;">12/19/2016</a></li>
+                          </ul>
+                    </ul>
+                  </li>
+
+
+
+
+
+                  <li>
+                      <a href="#">Lake</a>
+                      <ul>
+
+                                <li><input id = "clickMe" onclick = "changeImageLake()" type = "image" <img src="data/BoonsongLake.jpg" alt="Image 1" style="width:140px;height:140px;">Boonsong Lake</a></li>
+
+                  </li>
+
+
+              </ul>
+
+
+<script src="src/js/jquery.slimmenu.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+
+<script>
+
+$('.slimmenu').slimmenu(
+{
+    resizeWidth: '800',
+    collapserTitle: 'RGB',
+    animSpeed:'fast',
+    indentChildren: false,
+    childrenIndenter: '&raquo;'
+});
+
+</script>
+
+
+
+</body>
+</html>

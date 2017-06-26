@@ -1,0 +1,67 @@
+
+canvas,
+svg {
+  position: absolute;
+}
+
+.histogram {
+
+  isolation: isolate;
+}
+
+.histogram-area {
+
+  mix-blend-mode: screen;
+}
+
+.histogram-area.histogram-r {
+  fill: #f00;
+}
+
+.histogram-area.histogram-g {
+  fill: #0f0;
+}
+
+.histogram-area.histogram-b {
+  fill: #00f;
+}
+
+.histogram-line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+main {
+  right:600px;
+  top:600px;
+  position: absolute;
+  background-color: purple;
+}
+
+
+body{
+  margin: auto;
+     background-color: black;
+     font-size: 14px;
+}
+
+label {
+  display: block;
+  color:white;
+  padding-left: 15px;
+  text-indent: -15px;
+  position: relative;
+  left:660px;
+}
+input {
+  color:white;
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  *overflow: hidden;
+}
