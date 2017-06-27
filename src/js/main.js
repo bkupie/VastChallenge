@@ -119,7 +119,7 @@ var image = new Image;
 var image2 = new Image;
 image2.src = "data/BoonsongLake.jpg";
 image2.onload = loadedsecond;
-image.src = "data/original/image01.jpg"; // starting out picture
+image.src = "data/OG/image01.jpg"; // starting out picture
 image.onload = loaded;
 
 
