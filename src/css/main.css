@@ -3,6 +3,24 @@
   stroke-dasharray: 4,4;
 }
 
+
+h1	{
+color: #999999;
+font-family: arial, sans-serif;
+font-size: 36px;
+font-weight: bold;
+margin-top: 3px;
+margin-bottom:3px;
+}
+
+h2{
+color: #999999;
+font-family: arial, sans-serif;
+font-size: 30px;
+margin-top: 0px;
+margin-bottom:0px;
+}
+
 canvas,
 svg {
   position: absolute;

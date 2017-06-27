@@ -95,16 +95,6 @@ svg2.append("text")
     .style("text-anchor", "middle")
     .text("Intensity");
 
-
-    svgText.append("text")
-      .attr("y",-10 )
-      .attr("x",150 )
-      .attr("dy", "1em")
-      .style("text-anchor", "middle")
-      .style("font-size", "24px")
-      .text("Original Boonsong Lake Picture ")
-      .style('fill', d3.rgb(170, 247, 151))
-
 var histoarea = histogram.selectAll(".histogram-area")
     .data([r, g, b])
   .enter().append("path")
@@ -119,17 +109,10 @@ var image = new Image;
 var image2 = new Image;
 // specify as anonymous to remove cross-origin error
 image.crossOrigin = "";
-image2.crossOrigin = "";
-// set both image sources then load them respectivley
-image2.src = "data/BoonsongLake.jpg";
-image2.onload = loadedsecond;
+
 image.src = "data/OG/image01.jpg"; // starting out picture
 image.onload = loaded;
 
-
-function loadedsecond() {
-  context.drawImage(this,20, 721);
-}
 
 function loaded() {
   context.drawImage(this, 0, 0);
