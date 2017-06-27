@@ -197,7 +197,7 @@ function curveStepBelow(context) {
 
 //get an image from the "Original" menu
 function changeImageOriginal(d) {
-   var pictureName = "data/original/image";
+   var pictureName = "data/OG/image";
    if(d< 10)
    pictureName+="0";
 
