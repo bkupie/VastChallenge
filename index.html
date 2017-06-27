@@ -5,13 +5,11 @@
 
     <title>Micro Challenge 3</title>
     <div style="text-align: center;"><h1>Micro Challange 3</h1></div>
+    <div style="text-align: left;"><h2>Picture hisgoram brushing</h2></div>
     <!-- Our Canvas -->
-    <div style="text-align: center;"><h2>Picture &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Graph</h2></div>
     <canvas width="651" height="651"></canvas>
-
+    <!-- Our SVG -->
     <svg width="651" height="651"></svg>
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS Libraries -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
@@ -26,9 +24,13 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <!-- JS Source -->
     <script src="./src/js/main.js"></script>
+    <script src="./src/js/graph.js"></script>
     <script src="./src/js/imgSystem.js"></script>
+    <script src="./src/js/imgFuncs.js"></script>
+
 </head>
 <body>
+
 <div id="graph"></div>
 <ul class="slimmenu">
             <li>
@@ -92,41 +94,23 @@
                           </ul>
                     </ul>
                   </li>
-
-
-
-
-
                   <li>
                       <a href="#">Lake</a>
                       <ul>
-
                                 <li><input id = "clickMe" onclick = "changeImageLake()" type = "image" <img src="data/BoonsongLake.jpg" alt="Image 1" style="width:140px;height:140px;">Boonsong Lake</a></li>
-
                   </li>
-
-
               </ul>
 
-
-<script src="src/js/jquery.slimmenu.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-
-<script>
-
-$('.slimmenu').slimmenu(
-{
-    resizeWidth: '800',
-    collapserTitle: 'RGB',
-    animSpeed:'fast',
-    indentChildren: false,
-    childrenIndenter: '&raquo;'
-});
-
-</script>
-
-
-
+    <script>
+    // style the slimmenu
+      $('.slimmenu').slimmenu(
+      {
+        resizeWidth: '800',
+        collapserTitle: 'RGB',
+        animSpeed:'fast',
+        indentChildren: true,
+        childrenIndenter: '&raquo;'
+      });
+    </script>
 </body>
 </html>
