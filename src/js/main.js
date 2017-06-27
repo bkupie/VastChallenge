@@ -117,6 +117,10 @@ var histoline = histogram.selectAll(".histogram-line")
 
 var image = new Image;
 var image2 = new Image;
+// specify as anonymous to remove cross-origin error
+image.crossOrigin = "Anonymous";
+image.crossOrigin2 = "Anonymous";
+// set both image sources then load them respectivley
 image2.src = "data/BoonsongLake.jpg";
 image2.onload = loadedsecond;
 image.src = "data/OG/image01.jpg"; // starting out picture
@@ -217,6 +221,7 @@ function changeImageRGB(d) {
    pictureName = pictureName  + d + ".png";
    console.log(pictureName);
    image.src = pictureName;
+
    image.onload = newloaded;
 
 }
