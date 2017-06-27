@@ -1,3 +1,7 @@
+.tick line{
+  opacity: 0.2;
+  stroke-dasharray: 4,4;
+}
 
 canvas,
 svg {

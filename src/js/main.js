@@ -10,7 +10,7 @@ var canvas = document.querySelector("canvas"),
     width = canvas.width,
     height = canvas.height;
 
-var x = d3.scaleLinear().domain([0, 256]).rangeRound([0, widthgraph]),
+var x = d3.scaleLinear().domain([0, 260]).rangeRound([0, widthgraph]),
     y = d3.scaleLinear().rangeRound([heightgraph, 0]);
 
 var r = new Array(257),
@@ -242,16 +242,27 @@ function make_x_gridlines() {
 // gridlines in y axis function
 function make_y_gridlines() {
     return d3.axisLeft(y)
+        .tickSize(widthgraph)
         .tickArguments([20, "s"]);
 }
+
+function customYAxis(g) {
+  var s = g.selection ? g.selection() : g;
+  g.call(yAxis);
+  s.select(".domain").remove();
+  s.selectAll(".tick line").filter(Number).attr("stroke", "#777").attr("stroke-dasharray", "2,2");
+  s.selectAll(".tick text").attr("x", 4).attr("dy", -4);
+  if (s !== g) g.selectAll(".tick text").attrTween("x", null).attrTween("dy", null);
+}
+
 
 
 // add the X gridlines
   svg2.append("g")
       .attr("class", "grid")
-      .attr("transform", "translate(0," + height + ")")
+      .attr("transform", "translate(0," + heightgraph + ")")
       .call(make_x_gridlines()
-          .tickSize(-1650)
+          .tickSize(-500)
           .tickFormat("")
       )
 
@@ -260,8 +271,7 @@ function make_y_gridlines() {
             .attr("class", "grid")
             .call(make_y_gridlines()
                 .tickSize(-500)
-                .tickFormat("")
+                .tickFormat("") // make sure it doesn't print the labels again
             )
-
 
 // ------------------------------------------zooming ------------------------------------------
