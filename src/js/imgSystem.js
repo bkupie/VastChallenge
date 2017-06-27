@@ -11,7 +11,7 @@ var imgSystem = function() {
   var bounds = {};
 
   self.createImg = function(wCanvas) {
-    var canvas = document.getElementById(wCanvas);
+    var canvas = document.querySelector("canvas");
     var ctx = canvas.getContext('2d');
 
     // create the image

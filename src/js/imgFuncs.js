@@ -1,10 +1,16 @@
 
+
+var dateSelect; // keep track of what date the user selected
+
+var system = new imgSystem();
+
 var image = new Image;
 // specify as anonymous to remove cross-origin error
 image.crossOrigin = "";
-
 image.src = "data/OG/image01.jpg"; // starting out picture
 image.onload = loaded;
+
+system.initialize("data/CSV/image09_2016_03_06.csv",canvas,'sic')
 
 //get an image from the "Original" menu
 function changeImageOriginal(d) {
