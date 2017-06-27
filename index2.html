@@ -5,7 +5,7 @@
 
     <title>Micro Challenge 3</title>
     <div style="text-align: center;"><h1>Micro Challange 3</h1></div>
-    <div style="text-align: left;"><h2>Picture histogram brushing</h2></div>
+    <div style="text-align: left;"><h2>Picture hisgoram brushing</h2></div>
     <!-- Our Canvas -->
     <canvas width="651" height="651"></canvas>
     <!-- Our SVG -->
@@ -16,7 +16,6 @@
     <!-- CSS Source -->
     <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" type="text/css" href="lib/css/slimmenu.min.css">
-      <link rel="stylesheet" type="text/css" href="./src/css/slider.css">
     <!-- JS Libraries -->
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -24,18 +23,16 @@
     <script src="src/js/jquery.slimmenu.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <!-- JS Source -->
-    <script src="./src/js/main.js"></script>
+    <script src="./src/js/main2.js"></script>
     <script src="./src/js/graph.js"></script>
     <script src="./src/js/imgSystem.js"></script>
     <script src="./src/js/imgFuncs.js"></script>
 
-    <script src="./src/js/slider.js"></script>
-
-
-
 
 </head>
 <body>
+
+
 <div id="graph">
 <ul class="slimmenu">
             <li>
@@ -104,10 +101,22 @@
               </ul>
 </div>
 
-<input id="ex13" type="text" data-slider-ticks="[0, 100, 200, 300, 400]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels="['$0', '$100', '$200', '$300', '$400']"/>
+<div class="range">
+  <input type="range" min="1" max="7" steps="1" value="1">
+</div>
+
+<ul class="range-labels">
+  <li class="active selected">Today</li>
+  <li>2 days</li>
+  <li>3 days</li>
+  <li>4 days</li>
+  <li>5 days</li>
+  <li>6 days</li>
+  <li>7 days</li>
+</ul>
+
 
     <script>
-    
     // style the slimmenu
       $('.slimmenu').slimmenu(
       {

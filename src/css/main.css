@@ -21,6 +21,10 @@ margin-top: 0px;
 margin-bottom:0px;
 }
 
+
+/*
+the fallwoing is to style the slider */
+
 canvas,
 svg {
   position: absolute;
