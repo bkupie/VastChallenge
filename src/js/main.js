@@ -118,8 +118,8 @@ var histoline = histogram.selectAll(".histogram-line")
 var image = new Image;
 var image2 = new Image;
 // specify as anonymous to remove cross-origin error
-image.crossOrigin = "Anonymous";
-image.crossOrigin2 = "Anonymous";
+image.crossOrigin = "";
+image2.crossOrigin = "";
 // set both image sources then load them respectivley
 image2.src = "data/BoonsongLake.jpg";
 image2.onload = loadedsecond;
