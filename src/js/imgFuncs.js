@@ -34,7 +34,7 @@ function changeImageRGB(d) {
    console.log(pictureName);
    image.src = pictureName;
    image.onload = newloaded;
-
+   document.getElementById("sliderSliderVal").textContent = d;
 }
 
 function changeImageLake() {

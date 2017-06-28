@@ -6,7 +6,7 @@
 
     <title>Micro Challenge 3</title>
     <div style="text-align: center;"><h1>Mini Challenge 3</h1></div>
-    <div style="text-align: left;"><h2>Picture histogram brushing</h2></div>
+    <div style="text-align: left;"><h2><span id="CurrentVal">Current Image # : <span id="sliderSliderVal">01</span></span></h2></div>
     <!-- Our Canvas -->
     <canvas width="651" height="651"></canvas>
     <!-- Our SVG -->
@@ -57,7 +57,7 @@
                 data-slider-ticks="[1, 2, 3,4,5,6,7,8,9,10,11,12]"
                 data-slider-ticks-labels='["03/17/2014", "08/24/2014", "11/28/2014" , "12/30/2014","02/15/2015","06/24/2015","09/12/2015","11/15/2015","03/06/2016","06/26/2016","09/06/2016","12/19/2016"]'
                 data-slider-min="1"
-                data-slider-max="10"
+                data-slider-max="12"
                 data-slider-step="1"
                 data-slider-value="1"
                 data-slider-orientation = "vertical"
@@ -65,6 +65,7 @@
 
             </div>
             <div class="modal-footer">
+              <button id = "submit-btn" type="button" onclick="dateChange(1)" class="btn btn-primary btn-lg"data-dismiss="modal">Submit</button>
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>

@@ -1,17 +1,3 @@
-$("#openModalButton").click(function(){
-	$('#ex14').slider({
-	          	formatter: function(value) {
-	            	return 'Current value: ' + value;
-	          	}
-	        });
-})
-
-var slider = new Slider("#ex13", {
-    ticks: [0, 100, 200, 300, 400],
-    ticks_labels: ['$0', '$100', '$200', '$300', '$400'],
-    ticks_snap_bounds: 30
-});
-
 
 function refresh()
 {
@@ -19,7 +5,8 @@ function refresh()
   thisModal.modal('show');
   $("#slider").slider("refresh");
   thisModal.modal('hide');
- console.log("HELLO");
+
+ $("#ex6SliderVal").text("");
 
 }
 
@@ -27,3 +14,9 @@ var thisModal =$('#myModal');
 thisModal.modal('show');
 $("#slider").slider("refresh");
 thisModal.modal('hide');
+
+function dateChange(date){
+   console.log("Hi");
+ var system = new imgSystem();
+ system.initialize("data/CSV/image09_2016_03_06.csv",canvas,'sic')
+}
