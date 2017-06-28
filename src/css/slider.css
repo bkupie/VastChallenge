@@ -1,0 +1,18 @@
+#openModalButton {
+    position:absolute;
+    transition: .5s ease;
+    top: 75px;
+    left: 1080px;
+}
+
+
+.slider.slider-vertical .slider-tick-label-container .slider-tick-label{
+height: 70 !important;
+}
+
+#ex19{
+    position:absolute;
+    transition: .5s ease;
+    top: 50%;
+    left: 50%;
+}
